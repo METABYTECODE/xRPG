@@ -1,0 +1,298 @@
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+#myCustomWindow {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    color: #fff;
+    z-index: 1001;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none; /* Initially hidden */
+}
+
+#myCustomWindowHeader {
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#myCustomWindowContent {
+    padding: 10px;
+    overflow-y: auto; /* Add scroll for overflow */
+    max-height: 500px; /* Ensure content fits within window */
+}
+
+/* For category navigation arrows */
+.arrowButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#leftArrow {
+    left: 10px;
+}
+
+#rightArrow {
+    right: 10px;
+}
+
+/* For actor cards */
+.actorCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow-y: auto; /* Ensure content fits within window and is scrollable */
+}
+
+.actorCard {
+    background-color: #444;
+    border: 1px solid #fff;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 20px); /* Ensure cards fill the container and wrap */
+    box-sizing: border-box;
+}
+
+.actorName {
+    margin-bottom: 5px;
+}
+
+.actorGodModeToggle {
+    cursor: pointer;
+}
+
+.radio_button {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.radio_button_selected {
+    background-color: white;
+	width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.itemCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.itemCard {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 150px;
+    box-sizing: border-box;
+}
+
+.itemName {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.itemControls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemButton {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.itemAmount {
+    margin: 0 10px;
+}
+
+.speedContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.currentSpeed {
+    font-weight: bold;
+}
+
+.speedButton {
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.speedLockButton {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.clearStatesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.clearStatesButton {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.switchCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.switchCard {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 150px;
+    box-sizing: border-box;
+}
+
+.switchName {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.switchControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switchToggle {
+    cursor: pointer;
+}
+
+.switch_button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.switch_button_on {
+    background-color: green;
+}
+
+.switch_button_off {
+    background-color: red;
+}
+
+.positionCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.positionCard {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.positionHeader {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.positionDetails, .positionCoordinates {
+    margin-bottom: 5px;
+}
+
+.positionControls {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.positionButton {
+    padding: 5px;
+    cursor: pointer;
+    width: 45%;
+}
+
+.teleportContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.teleportField {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.teleportField label {
+    margin-bottom: 5px;
+}
+
+.teleportField input {
+    width: 100px;
+    padding: 5px;
+}
+
+.teleportControls {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#teleportButton {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
